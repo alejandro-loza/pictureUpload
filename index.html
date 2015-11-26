@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Upload</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Simple image upload. YEA</h1>
+    </header>
+    <main>
+		<section id="upload">
+			<form id        =  "uploadForm"
+			   enctype   =  "multipart/form-data"
+			   action    =  "/api/photo"
+			   method    =  "post"
+			   >
+			   <input type="file" name="userPhoto" />
+			   <input type="submit" value="Upload Image" name="submit">
+		   </form>
+      </section>
+    </main>
+  </body>
+</html>
